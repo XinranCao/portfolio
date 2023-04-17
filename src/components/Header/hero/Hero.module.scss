@@ -1,6 +1,106 @@
+@import "../../../styles/constants.scss";
+:root {
+  @media (min-width: $md) {
+    --designer-width: 120px; // Adjust this value based on the width of "Designer" element
+    --front-end-width: 140px; // Adjust this value based on the width of "Front-End" element
+  }
+  --designer-width: 80px; // Adjust this value based on the width of "Designer" element
+  --front-end-width: 90px; // Adjust this value based on the width of "Front-End" element
+}
+
 .wrapper {
   .container {
     position: relative;
     z-index: 1;
+    img {
+      position: absolute;
+      z-index: -1;
+    }
+
+    .role {
+      font-size: 15px;
+      font-weight: bold;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      right: 0;
+      @media (min-width: $md) {
+        font-size: 24px;
+      }
+
+      .part {
+        padding: 5px;
+      }
+
+      @keyframes fade {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        20%,
+        80% {
+          opacity: 0.5;
+        }
+        30%,
+        70% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes move-left {
+        0%,
+        20%,
+        80%,
+        100% {
+          transform: translateX(0);
+        }
+        30%,
+        70% {
+          transform: translateX(calc(-1 * var(--front-end-width) - 8px));
+        }
+      }
+
+      @keyframes move-right {
+        0%,
+        20%,
+        80%,
+        100% {
+          transform: translateX(0);
+        }
+        30%,
+        70% {
+          transform: translateX(calc(var(--designer-width) + 8px));
+        }
+      }
+
+      #designer {
+        font-weight: normal;
+        width: var(--designer-width);
+        animation: fade 8s linear infinite, move-right 8s linear infinite;
+      }
+
+      #front_end {
+        font-weight: normal;
+        text-align: end;
+        width: var(--front-end-width);
+        animation: fade 8s linear infinite, move-left 8s linear infinite;
+      }
+
+      #user_experience {
+        text-align: end;
+        animation: move-right 8s linear infinite;
+      }
+
+      #engineer {
+        animation: move-left 8s linear infinite;
+      }
+
+      #plus {
+        animation: fade 8s linear infinite;
+      }
+    }
+
+    .introduction {
+    }
   }
 }
