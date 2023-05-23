@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className={`paddings ${css.wrapper}`}>
       <div className={`innerWidth ${css.container}`}>
-        <img alt="picture of Xinran" src="../../../public/person.png" />
+        {/* <img alt="picture of Xinran" src="../../../public/person.png" /> */}
         <div className={css.rightContent}>
           <div class={css.role}>
             <span class={css.part} id={css.user_experience}>
