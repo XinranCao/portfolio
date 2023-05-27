@@ -8,20 +8,20 @@ const Hero = () => {
         {/* <img alt="picture of Xinran" src="../../../public/person.png" /> */}
         <div className={css.rightContent}>
           <div class={css.role}>
-            <span class={css.part} id={css.user_experience}>
-              User Experience
-            </span>
-            <span class={css.part} id={css.designer}>
-              Designer
-            </span>
-            <span id={css.plus}>+</span>
-            <span class={css.part} id={css.front_end}>
-              Front-End
-            </span>
-            <span class={css.part} id={css.engineer}>
-              Engineer
-            </span>
+            <div className="secondaryText" id={css.uxd_text}>
+              User Experience Designer
+            </div>
+            <div className="secondaryText" id={css.fed_text}>
+              Front-End Developer
+            </div>
+            <div className="secondaryText" id={css.uxe_text}>
+              User Experience Engineer
+            </div>
+            <div className="secondaryText" id={css.plux_text}>
+              +
+            </div>
           </div>
+
           <div className={css.introduction}>
             My passion lies in bridging the gap between innovative UX design and
             robust front-end development. I design user-centered solutions and
