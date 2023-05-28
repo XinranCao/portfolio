@@ -26,6 +26,12 @@
       object-fit: contain;
       align-self: center;
 
+      @media (min-width: 1130px) {
+        width: 400px;
+        justify-self: right;
+        padding-right: 2rem;
+      }
+
       @media (max-width: $md) {
         grid-column: 2 / span 1;
         grid-row: 1 / span 2;
