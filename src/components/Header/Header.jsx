@@ -26,7 +26,7 @@ const Header = () => {
           className={`flexCenter ${css.menu}`}
         >
           <li>
-            <a href="">Work</a>
+            <a href="#work">Work</a>
           </li>
           <li>
             <a href="">About</a>

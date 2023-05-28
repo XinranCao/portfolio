@@ -1,6 +1,13 @@
 @import "../../styles/constants.scss";
 
 .wrapper {
+  @media (max-width: $md) {
+    margin-top: 1rem;
+  }
+  @media (max-width: $sm) {
+    margin-top: 0;
+  }
+  margin-top: 3rem;
   .container {
     position: relative;
     z-index: 1;
@@ -14,6 +21,9 @@
     @media (max-width: $sm) {
       column-gap: 0rem;
       padding-top: 1.2rem;
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr 1fr;
     }
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: auto 6rem 1fr;
@@ -40,6 +50,9 @@
         grid-column: 2 / span 1;
         grid-row: 1 / span 2;
         object-position: top;
+      }
+      @media (max-width: 480px) {
+        grid-row: 1 / span 1;
       }
       grid-column: 1 / span 1;
       grid-row: 1 / span 3;
@@ -153,7 +166,7 @@
         transform: translateY(-50%);
         animation: fade-in 8s linear infinite;
         @media (max-width: $sm) {
-          top: 40%;
+          top: 36%;
         }
       }
 
@@ -165,7 +178,7 @@
         transform: translateY(-50%);
         animation: fade-out-fast 8s linear infinite;
         @media (max-width: $sm) {
-          top: 40%;
+          top: 36%;
         }
       }
     }
