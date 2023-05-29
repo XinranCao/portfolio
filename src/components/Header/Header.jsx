@@ -1,11 +1,11 @@
-import React, { useImperativeHandle, useState } from "react";
+import React, { useState } from "react";
 import css from "./Header.module.scss";
 import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { getMenuStyles, headerVariants } from "../../utils/motion";
 import useHeadershadow from "../../hooks/useHeaderShadow";
 
-const Header = () => {
+const Header = ({ tab, handleClickTab }) => {
   // determine whether to show the menu in small screen view
   const [menuOpened, setMenuOpened] = useState(false);
   // hook to get shadow for header when scrolling down
@@ -25,15 +25,16 @@ const Header = () => {
           style={getMenuStyles(menuOpened)}
           className={`flexCenter ${css.menu}`}
         >
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="">About</a>
-          </li>
-          <li>
-            <a href="">Resume</a>
-          </li>
+          {["Work", "More", "About", "Resume"].map((item, index) => (
+            <li key={index}>
+              <a
+                onClick={() => handleClickTab(index)}
+                className={`${tab === index ? css.active : css.inactive}`}
+              >
+                {item}
+              </a>
+            </li>
+          ))}
         </ul>
         {/* icon that opens the menu for medium and small screens */}
         <div
