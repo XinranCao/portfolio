@@ -1,8 +1,9 @@
 import React from "react";
-import css from "./Works.module.scss";
-import { fadeIn, staggerChildren } from "../../utils/motion";
+import css from "./Gallery.module.scss";
+import { fadeIn } from "../../../utils/motion";
 import { motion } from "framer-motion";
-const Works = () => {
+
+const Gallery = ({ goTo }) => {
   return (
     <section className={`paddings ${css.wrapper}`}>
       <div className={`innerWidth flexCenter ${css.container}`}>
@@ -18,7 +19,9 @@ const Works = () => {
             viewport={{ once: true, amount: 0.15 }}
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
-            <img src="../../../public/dearborn.png" alt="project" />
+            <a onClick={() => goTo(0)}>
+              <img src="../../../public/dearborn.png" alt="project" />
+            </a>
             <div className={`secondaryText  ${css.proj_title}`}>
               Permitting Better Permitting
             </div>
@@ -61,7 +64,9 @@ const Works = () => {
             viewport={{ once: true, amount: 0.25 }}
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
-            <img src="../../../public/ucsf_library.png" alt="project" />
+            <a onClick={() => goTo(2)}>
+              <img src="../../../public/ucsf_library.png" alt="project" />
+            </a>
             <div className={`secondaryText  ${css.proj_title}`}>
               UCSF Library Website Evaluation
             </div>
@@ -99,7 +104,9 @@ const Works = () => {
             viewport={{ once: true, amount: 0.25 }}
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
-            <img src="../../../public/elo.png" alt="project" />
+            <a onClick={() => goTo(4)}>
+              <img src="../../../public/elo.png" alt="project" />
+            </a>
             <div className={`secondaryText  ${css.proj_title}`}>
               Aligning Cross-Department Project Recruitment
             </div>
@@ -116,4 +123,4 @@ const Works = () => {
     </section>
   );
 };
-export default Works;
+export default Gallery;
