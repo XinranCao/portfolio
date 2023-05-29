@@ -47,6 +47,19 @@ const Works = () => {
             </div>
           </motion.div>
           <motion.div variants={fadeIn("up", "tween", 0.9, 0.6)}>
+            <img src="../../../public/jiangwen.png" alt="project" />
+            <div className={`secondaryText  ${css.proj_title}`}>
+              Jiang Wen Movie Website
+            </div>
+            <div className={css.proj_subtitle}>
+              Responsive Website for Exposition of Jiang Wen Films
+            </div>
+            <div className={css.proj_tags}>
+              <span>#Web Design</span>
+              <span>#Responsive Web Development</span>
+            </div>
+          </motion.div>
+          <motion.div variants={fadeIn("up", "tween", 1.1, 0.6)}>
             <img src="../../../public/elo.png" alt="project" />
             <div className={`secondaryText  ${css.proj_title}`}>
               Aligning Cross-Department Project Recruitment
