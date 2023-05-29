@@ -4,22 +4,20 @@ import { fadeIn, staggerChildren } from "../../utils/motion";
 import { motion } from "framer-motion";
 const Works = () => {
   return (
-    <motion.section
-      variants={staggerChildren}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`paddings ${css.wrapper}`}
-    >
-      <a className="anchor" id="work"></a>
+    <section className={`paddings ${css.wrapper}`}>
       <div className={`innerWidth flexCenter ${css.container}`}>
         <div className={`flexCenter ${css.heading}`}>
           <div>
-            <span className="primaryText"> My Projects</span>
+            <span className="primaryText"> My Works</span>
           </div>
         </div>
         <div className={`flexCenter ${css.showCase}`}>
-          <motion.div variants={fadeIn("up", "tween", 0.5, 0.6)}>
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.15 }}
+            variants={fadeIn("left", "tween", 0, 0.6)}
+          >
             <img src="../../../public/dearborn.png" alt="project" />
             <div className={`secondaryText  ${css.proj_title}`}>
               Permitting Better Permitting
@@ -33,7 +31,36 @@ const Works = () => {
               <span>#UX Design</span>
             </div>
           </motion.div>
-          <motion.div variants={fadeIn("up", "tween", 0.7, 0.6)}>
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeIn("left", "tween", 0, 0.6)}
+          >
+            <a
+              href="https://xinrancao.github.io/course_scheduler/"
+              target="_blank"
+            >
+              <img src="../../../public/scheduler.png" alt="project" />
+            </a>
+            <div className={`secondaryText  ${css.proj_title}`}>
+              Course Scheduler
+            </div>
+            <div className={css.proj_subtitle}>
+              Re-design of Online Course Scheduler
+            </div>
+            <div className={css.proj_tags}>
+              <span>#UX Design</span>
+              <span>#Web Design</span>
+              <span>#Web Development</span>
+            </div>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeIn("left", "tween", 0, 0.6)}
+          >
             <img src="../../../public/ucsf_library.png" alt="project" />
             <div className={`secondaryText  ${css.proj_title}`}>
               UCSF Library Website Evaluation
@@ -46,8 +73,15 @@ const Works = () => {
               <span>#UX Research</span>
             </div>
           </motion.div>
-          <motion.div variants={fadeIn("up", "tween", 0.9, 0.6)}>
-            <img src="../../../public/jiangwen.png" alt="project" />
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeIn("left", "tween", 0, 0.6)}
+          >
+            <a href="https://xinrancao.github.io/jiangwen/" target="_blank">
+              <img src="../../../public/jiangwen.png" alt="project" />
+            </a>
             <div className={`secondaryText  ${css.proj_title}`}>
               Jiang Wen Movie Website
             </div>
@@ -59,7 +93,12 @@ const Works = () => {
               <span>#Responsive Web Development</span>
             </div>
           </motion.div>
-          <motion.div variants={fadeIn("up", "tween", 1.1, 0.6)}>
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeIn("left", "tween", 0, 0.6)}
+          >
             <img src="../../../public/elo.png" alt="project" />
             <div className={`secondaryText  ${css.proj_title}`}>
               Aligning Cross-Department Project Recruitment
@@ -74,7 +113,7 @@ const Works = () => {
           </motion.div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 export default Works;

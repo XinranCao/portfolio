@@ -3,7 +3,7 @@ export const headerVariants = {
     opacity: 0,
     y: -50,
     transition: {
-      type: "spring",
+      type: "tween",
       stiffness: 300,
       damping: 140,
     },
