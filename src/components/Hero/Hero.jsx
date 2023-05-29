@@ -10,7 +10,7 @@ const Hero = () => {
 
         <div className={`primaryText ${css.greeting}`}>Hi, I'm Xinran!</div>
 
-        <div class={css.role}>
+        <div className={css.role}>
           <div className="secondaryText" id={css.uxd_text}>
             User Experience Designer
           </div>
