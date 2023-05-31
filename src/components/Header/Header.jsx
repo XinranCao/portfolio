@@ -32,7 +32,7 @@ const Header = ({ tab, handleClickTab }) => {
           style={getMenuStyles(menuOpened)}
           className={`flexCenter ${css.menu}`}
         >
-          {["Work", "More", "About", "Resume"].map((item, index) => (
+          {/* {["Work", "More", "About", "Resume"].map((item, index) => (
             <li key={index}>
               <a
                 onClick={() => handleClickTab(index)}
@@ -41,7 +41,24 @@ const Header = ({ tab, handleClickTab }) => {
                 {item}
               </a>
             </li>
-          ))}
+          ))} */}
+          <li>
+            <a
+              onClick={() => handleClickTab(0)}
+              className={`${tab === 0 ? css.active : css.inactive}`}
+            >
+              Work
+            </a>
+          </li>
+          <li>
+            <a
+              href="/resume/Xinran_Resume.pdf"
+              target="_blank"
+              className={css.inactive}
+            >
+              Resume
+            </a>
+          </li>
         </ul>
         {/* icon that opens the menu for medium and small screens */}
         <div
