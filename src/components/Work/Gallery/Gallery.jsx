@@ -20,7 +20,7 @@ const Gallery = ({ goTo }) => {
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
             <a onClick={() => goTo(0)}>
-              <img src="../../../public/dearborn.png" alt="project" />
+              <img src="/dearborn/dearborn.png" alt="project" />
             </a>
             <div className={`secondaryText  ${css.proj_title}`}>
               Permitting Better Permitting
@@ -44,7 +44,7 @@ const Gallery = ({ goTo }) => {
               href="https://xinrancao.github.io/course_scheduler/"
               target="_blank"
             >
-              <img src="../../../public/scheduler.png" alt="project" />
+              <img src="/scheduler.png" alt="project" />
             </a>
             <div className={`secondaryText  ${css.proj_title}`}>
               Course Scheduler
@@ -65,7 +65,7 @@ const Gallery = ({ goTo }) => {
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
             <a onClick={() => goTo(2)}>
-              <img src="../../../public/ucsf_library.png" alt="project" />
+              <img src="/ucsf_library.png" alt="project" />
             </a>
             <div className={`secondaryText  ${css.proj_title}`}>
               UCSF Library Website Evaluation
@@ -85,7 +85,7 @@ const Gallery = ({ goTo }) => {
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
             <a href="https://xinrancao.github.io/jiangwen/" target="_blank">
-              <img src="../../../public/jiangwen.png" alt="project" />
+              <img src="/jiangwen.png" alt="project" />
             </a>
             <div className={`secondaryText  ${css.proj_title}`}>
               Jiang Wen Movie Website
@@ -105,7 +105,7 @@ const Gallery = ({ goTo }) => {
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
             <a onClick={() => goTo(4)}>
-              <img src="../../../public/elo.png" alt="project" />
+              <img src="/elo.png" alt="project" />
             </a>
             <div className={`secondaryText  ${css.proj_title}`}>
               Aligning Cross-Department Project Recruitment

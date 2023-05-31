@@ -4,6 +4,9 @@
   .container {
     position: relative;
     .goBack {
+      @media (max-width: $sm) {
+        top: -2rem;
+      }
       position: absolute;
       top: -3rem;
       left: 0;
@@ -20,7 +23,7 @@
       display: flex;
       flex-direction: column;
       gap: 3rem;
-      padding: 0 5rem;
+      padding: 0 10rem;
       width: 100%;
       img {
         width: 100%;
@@ -30,6 +33,7 @@
       }
       .infoTitle {
         color: #16285c;
+        font-weight: bold;
       }
       .basicInfo {
         display: flex;
@@ -59,11 +63,33 @@
         }
         #client_meeting {
           display: flex;
+          flex-direction: column;
+          gap: 3rem;
+        }
+        #client_meeting_pt1,
+        #client_meeting_pt2,
+        #brainstorming,
+        #exposition {
+          display: flex;
           gap: 2rem;
-          @media (max-width: $sm) {
+          @media (max-width: $md) {
             flex-direction: column-reverse;
             gap: 0;
           }
+        }
+        #client_meeting_pt2,
+        #exposition {
+          @media (max-width: $md) {
+            flex-direction: column;
+            gap: 2rem;
+          }
+        }
+        #brainstorming {
+          flex-direction: row;
+        }
+
+        #affnity_diagram {
+          margin-top: 2rem;
         }
         .section_content {
           display: flex;
@@ -72,6 +98,11 @@
           p {
             margin-top: 1rem;
           }
+          .note {
+            color: #3e5d90;
+            font-size: 0.85rem;
+          }
+
           .infoTitle {
             line-height: 2rem;
             margin-top: 1rem;
@@ -79,13 +110,74 @@
           #dac {
             padding-top: 3rem;
           }
-          .section_horizontal {
-            @media (min-width: $xl) {
-              flex-basis: auto;
+          #low_fi {
+            @media (max-width: $md) {
+              padding: 0;
             }
-            flex-basis: fit-content;
+            margin-top: 1rem;
+            padding: 0 15%;
+            background: white;
           }
-          .section_vertical {
+          .section_horizontal {
+            flex-basis: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .photos {
+            @media (max-width: $md) {
+              grid-template-columns: 1fr;
+              gap: 1rem;
+            }
+            margin-top: 2rem;
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr 1fr;
+          }
+          .hi_fi {
+            margin: 2rem 0 6rem 0;
+
+            .hi_fi_title {
+              @media (max-width: $md) {
+                font-size: 1.5rem;
+              }
+              display: flex;
+              justify-content: center;
+              text-align: center;
+              margin-bottom: 1.5rem;
+              font-size: 2rem;
+              font-weight: bold;
+              color: #3e5d90;
+            }
+            .product_showcase {
+              @media (max-width: $sm) {
+                gap: 1rem;
+              }
+              display: flex;
+              gap: 3rem;
+              .showcase_col {
+                @media (max-width: $sm) {
+                  gap: 1rem;
+                }
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+              }
+            }
+            .figma_iframe {
+              @media (max-width: $lg) {
+                padding: 0 5%;
+                height: 60vw;
+              }
+              @media (max-width: $sm) {
+                padding: 0;
+                height: 80vw;
+              }
+              display: flex;
+              justify-content: center;
+              padding: 0 10%;
+              height: 40vw;
+            }
           }
         }
       }
