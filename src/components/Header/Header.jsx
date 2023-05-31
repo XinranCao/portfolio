@@ -1,15 +1,21 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import css from "./Header.module.scss";
 import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { getMenuStyles, headerVariants } from "../../utils/motion";
 import useHeadershadow from "../../hooks/useHeaderShadow";
-
+import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 const Header = ({ tab, handleClickTab }) => {
   // determine whether to show the menu in small screen view
   const [menuOpened, setMenuOpened] = useState(false);
   // hook to get shadow for header when scrolling down
   const headerShadow = useHeadershadow();
+  const menuRef = useRef();
+
+  useOutsideAlerter({
+    menuRef,
+    setMenuOpened,
+  });
   return (
     <motion.div
       initial="hidden"
@@ -22,6 +28,7 @@ const Header = ({ tab, handleClickTab }) => {
       <div className={`flexCenter innerWidth ${css.container}`}>
         <div className={css.name}>Xinran</div>
         <ul
+          ref={menuRef}
           style={getMenuStyles(menuOpened)}
           className={`flexCenter ${css.menu}`}
         >
