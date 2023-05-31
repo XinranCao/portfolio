@@ -4,6 +4,8 @@ This is a self-written portfolio website. The project uses React, SCSS, Vite, fr
 
 More projects are coming soon!
 
+Inspired by a [portfolio project](https://github.com/ZainRk/Personal-Portfolio-2-starter-pack) by [ZAINKEEPSCODE](https://www.youtube.com/watch?v=Pu9I33nDeBk).
+
 ## NodeJS
 
 - https://nodejs.org/en/download/
