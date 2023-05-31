@@ -1,15 +1,7 @@
 ## Portfolio Website
 
-This is a self-written portfolio website. The project uses React, SCSS, Vite, framer motion, etc. I used the starter code and self-built the structure and content. Currently it is a one-page website, and i am planning to re-write it using router.
-
-More projects are coming soon!
-
 Inspired by a [portfolio project](https://github.com/ZainRk/Personal-Portfolio-2-starter-pack) by [ZAINKEEPSCODE](https://www.youtube.com/watch?v=Pu9I33nDeBk).
 
-## NodeJS
+This is a self-build portfolio website using React, SCSS, Vite, and Framer Motion, among others. The starter code served as a starting point, but I personally constructed its structure and filled it with content. While it is currently a single-page web application, my future plan involves restructuring it using react router."
 
-- https://nodejs.org/en/download/
-
-## Git
-
-- https://git-scm.com/downloads
+More projects are coming soon!
