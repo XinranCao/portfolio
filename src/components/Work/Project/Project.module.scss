@@ -77,15 +77,16 @@
             gap: 0;
           }
         }
+        #brainstorming {
+          flex-direction: row;
+        }
         #client_meeting_pt2,
-        #exposition {
+        #exposition,
+        #brainstorming {
           @media (max-width: $md) {
             flex-direction: column;
             gap: 2rem;
           }
-        }
-        #brainstorming {
-          flex-direction: row;
         }
 
         #affnity_diagram {
