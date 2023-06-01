@@ -6,7 +6,7 @@ const Hero = () => {
     <section className={`paddings ${css.wrapper}`}>
       <div className={`innerWidth ${css.container}`}>
         {/* <a href="https://www.freepik.com/free-vector/process-concept-illustration_11434267.htm#page=9&query=user%20experience%20engineer%20illustration&position=19&from_view=search&track=ais">Image by storyset</a> on Freepik */}
-        <img alt="picture of Xinran" src="../../../public/ux_process.png" />
+        <img alt="UX Process" src="/ux_process.png" />
 
         <div className={`primaryText ${css.greeting}`}>Hi, I'm Xinran!</div>
 

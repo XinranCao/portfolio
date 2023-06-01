@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import css from "./Project.module.scss";
 
 const Project = ({ goBack }) => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className={`paddings ${css.wrapper}`}>
       <div className={`innerWidth flexCenter ${css.container}`}>
