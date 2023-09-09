@@ -28,7 +28,8 @@ const Project = ({ goBack }) => {
               <span> Xinran Cao </span>
               <span> Yian Gong </span>
               <span> Xilei Liu </span>
-              <span> Orville Mo-He Emilia Schneider</span>
+              <span> Orville Mo-He </span>
+              <span> Emilia Schneider</span>
             </div>
             <div className={css.infoSection}>
               <span className={`secondaryText  ${css.infoTitle}`}>My Role</span>
@@ -133,10 +134,7 @@ const Project = ({ goBack }) => {
                 </div>
                 <div id={css.client_meeting_pt2}>
                   <div className={css.section_horizontal}>
-                    <a
-                      href="/public/dearborn/current_workflow.png"
-                      target="_blank"
-                    >
+                    <a href="/dearborn/current_workflow.png" target="_blank">
                       <img
                         id={css.curr_wf}
                         src="/dearborn/current_workflow.png"
@@ -200,14 +198,14 @@ const Project = ({ goBack }) => {
                   experience in their context.
                 </p>
                 <div className={css.photos}>
-                  <a href="/public/dearborn/persona1.png" target="_blank">
+                  <a href="/dearborn/persona1.png" target="_blank">
                     <img
                       id={css.curr_wf}
                       src="/dearborn/persona1.png"
                       alt="User Persona"
                     />
                   </a>
-                  <a href="/public/dearborn/persona2.png" target="_blank">
+                  <a href="/dearborn/persona2.png" target="_blank">
                     <img
                       id={css.curr_wf}
                       src="/dearborn/persona2.png"
@@ -226,10 +224,7 @@ const Project = ({ goBack }) => {
                   Affinity Diagram
                 </div>
                 <div id={css.affnity_diagram}>
-                  <a
-                    href="/public/dearborn/dearborn_affinity.png"
-                    target="_blank"
-                  >
+                  <a href="/dearborn/dearborn_affinity.png" target="_blank">
                     <img
                       src="/dearborn/dearborn_affinity.png"
                       alt="Affinity Diagram"
@@ -398,7 +393,7 @@ const Project = ({ goBack }) => {
                     And we proposed new workflows for information-gathering,
                     application submission, and status update & feedback
                   </p>
-                  <a href="/public/dearborn/new_workflow.png" target="_blank">
+                  <a href="/dearborn/new_workflow.png" target="_blank">
                     <img src="/dearborn/new_workflow.png" alt="New Workflows" />
                   </a>
                 </div>
@@ -459,19 +454,13 @@ const Project = ({ goBack }) => {
                     our solutions.
                   </p>
                   <div className={css.photos}>
-                    <a
-                      href="/public/dearborn/usability_test1.png"
-                      target="_blank"
-                    >
+                    <a href="/dearborn/usability_test1.png" target="_blank">
                       <img
                         src="/dearborn/usability_test1.png"
                         alt="Usability Test Protocol"
                       />
                     </a>
-                    <a
-                      href="/public/dearborn/usability_test2.png"
-                      target="_blank"
-                    >
+                    <a href="/dearborn/usability_test2.png" target="_blank">
                       <img
                         src="/dearborn/usability_test2.png"
                         alt="Usability Test Protocol"
@@ -495,10 +484,7 @@ const Project = ({ goBack }) => {
                     to address the issues identified during the tests as well as
                     to figure out which design version to keep.
                   </p>
-                  <a
-                    href="/public/dearborn/iteration_ideate.png"
-                    target="_blank"
-                  >
+                  <a href="/dearborn/iteration_ideate.png" target="_blank">
                     <img
                       src="/dearborn/iteration_ideate.png"
                       alt="Iteration Ideate"
