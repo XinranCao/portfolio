@@ -165,20 +165,6 @@
                 gap: 3rem;
               }
             }
-            .figma_iframe {
-              @media (max-width: $lg) {
-                padding: 0 5%;
-                height: 60vw;
-              }
-              @media (max-width: $sm) {
-                padding: 0;
-                height: 80vw;
-              }
-              display: flex;
-              justify-content: center;
-              padding: 0 10%;
-              height: 40vw;
-            }
           }
         }
       }

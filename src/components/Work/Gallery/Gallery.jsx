@@ -2,8 +2,9 @@ import React from "react";
 import css from "./Gallery.module.scss";
 import { fadeIn } from "../../../utils/motion";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-const Gallery = ({ goTo }) => {
+const Gallery = () => {
   return (
     <section className={`paddings ${css.wrapper}`}>
       <div className={`innerWidth flexCenter ${css.container}`}>
@@ -19,9 +20,9 @@ const Gallery = ({ goTo }) => {
             viewport={{ once: true, amount: 0.15 }}
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
-            <a onClick={() => goTo(0)}>
+            <Link to="/works/dearborn">
               <img src="/dearborn/dearborn.png" alt="project" />
-            </a>
+            </Link>
             <div className={`secondaryText  ${css.proj_title}`}>
               Permitting Better Permitting
             </div>

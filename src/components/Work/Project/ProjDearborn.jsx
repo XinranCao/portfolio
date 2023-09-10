@@ -1,14 +1,21 @@
 import React, { useState, useEffect } from "react";
 import css from "./Project.module.scss";
+import { useNavigate } from "react-router-dom";
 
-const Project = ({ goBack }) => {
+const Project = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const navigate = useNavigate();
+
   return (
     <section className={`paddings ${css.wrapper}`}>
       <div className={`innerWidth flexCenter ${css.container}`}>
-        <div onClick={goBack} className={`secondaryText ${css.goBack}`}>
+        <div
+          onClick={() => navigate(-1)}
+          className={`secondaryText ${css.goBack}`}
+        >
           ← &nbsp; Go back
         </div>
         <div className={css.content}>
@@ -613,7 +620,7 @@ const Project = ({ goBack }) => {
                       </div>
                     </a>
                   </div>
-                  <div className={css.hi_fi}>
+                  {/* <div className={css.hi_fi}>
                     <div className={css.hi_fi_title}>Live Demo</div>
                     <div className={css.figma_iframe}>
                       <iframe
@@ -622,7 +629,7 @@ const Project = ({ goBack }) => {
                         allowfullscreen
                       ></iframe>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
