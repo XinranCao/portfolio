@@ -65,26 +65,6 @@ const Gallery = () => {
             viewport={{ once: true, amount: 0.25 }}
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
-            <a onClick={() => goTo(2)}>
-              <img src="/ucsf_library.png" alt="project" />
-            </a>
-            <div className={`secondaryText  ${css.proj_title}`}>
-              UCSF Library Website Evaluation
-            </div>
-            <div className={css.proj_subtitle}>
-              Consulting and UX Research for Enhanced Mobile Interface
-            </div>
-            <div className={css.proj_tags}>
-              <span>#Consulting</span>
-              <span>#UX Research</span>
-            </div>
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.25 }}
-            variants={fadeIn("left", "tween", 0, 0.6)}
-          >
             <a href="https://xinrancao.github.io/jiangwen/" target="_blank">
               <img src="/jiangwen.png" alt="project" />
             </a>
@@ -105,9 +85,30 @@ const Gallery = () => {
             viewport={{ once: true, amount: 0.25 }}
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
-            <a onClick={() => goTo(4)}>
+            <div className={css.comingSoon}>
+              <img src="/ucsf_library.png" alt="project" />
+            </div>
+
+            <div className={`secondaryText  ${css.proj_title}`}>
+              UCSF Library Website Evaluation
+            </div>
+            <div className={css.proj_subtitle}>
+              Consulting and UX Research for Enhanced Mobile Interface
+            </div>
+            <div className={css.proj_tags}>
+              <span>#Consulting</span>
+              <span>#UX Research</span>
+            </div>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeIn("left", "tween", 0, 0.6)}
+          >
+            <div className={css.comingSoon}>
               <img src="/elo.png" alt="project" />
-            </a>
+            </div>
             <div className={`secondaryText  ${css.proj_title}`}>
               Aligning Cross-Department Project Recruitment
             </div>

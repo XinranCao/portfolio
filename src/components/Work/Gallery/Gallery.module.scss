@@ -34,6 +34,26 @@
           transform: scale(1.01);
         }
       }
+
+      .comingSoon {
+        position: relative;
+      }
+
+      .comingSoon:hover::after {
+        content: "Coming Soon...";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 80%);
+        font-size: 48px;
+        color: rgba(256, 256, 256, 80%);
+      }
+
       .proj_title {
         @media (max-width: $sm) {
           line-height: 1.6rem;

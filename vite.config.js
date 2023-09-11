@@ -6,10 +6,10 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/fonts": {
-        target: "https://fonts.gstatic.com",
+      "/fonts-css": {
+        target: "https://fonts.googleapis.com",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/fonts/, ""),
+        rewrite: (path) => path.replace(/^\/fonts-css/, ""),
       },
     },
   },

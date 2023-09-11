@@ -478,7 +478,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className={css.proj_section}>
+          <div className={css.proj_section} id="iteration">
             <span className={css.sectionTitle}>Iteration</span>
             <div className={`${css.section_content} ${css.vertical}`}>
               <div className={css.vertical}>
