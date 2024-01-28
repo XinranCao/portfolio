@@ -20,8 +20,28 @@ const Gallery = () => {
             viewport={{ once: true, amount: 0.15 }}
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
+            <a href="https://github.com/XinranCao/FluffyFinder" target="_blank">
+              <img src="/fluffy_finder.png" alt="fluffy finder project" />
+            </a>
+            <div className={`secondaryText  ${css.proj_title}`}>
+              Fluffy Finder
+            </div>
+            <div className={css.proj_subtitle}>
+              Mobile Application that helps find lost pets
+            </div>
+            <div className={css.proj_tags}>
+              <span>#Mobile Application Development</span>
+              <span>#Database</span>
+            </div>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeIn("left", "tween", 0, 0.6)}
+          >
             <Link to="/works/dearborn">
-              <img src="/dearborn/dearborn.png" alt="project" />
+              <img src="/dearborn/dearborn.png" alt="dearborn project" />
             </Link>
             <div className={`secondaryText  ${css.proj_title}`}>
               Permitting Better Permitting
@@ -45,7 +65,7 @@ const Gallery = () => {
               href="https://xinrancao.github.io/course_scheduler/"
               target="_blank"
             >
-              <img src="/scheduler.png" alt="project" />
+              <img src="/scheduler.png" alt="course scheduler project" />
             </a>
             <div className={`secondaryText  ${css.proj_title}`}>
               Course Scheduler
@@ -66,7 +86,7 @@ const Gallery = () => {
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
             <a href="https://xinrancao.github.io/jiangwen/" target="_blank">
-              <img src="/jiangwen.png" alt="project" />
+              <img src="/jiangwen.png" alt="jiangwen website project" />
             </a>
             <div className={`secondaryText  ${css.proj_title}`}>
               Jiang Wen Movie Website
@@ -86,7 +106,7 @@ const Gallery = () => {
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
             <div className={css.comingSoon}>
-              <img src="/ucsf_library.png" alt="project" />
+              <img src="/ucsf_library.png" alt="ucsf library project" />
             </div>
 
             <div className={`secondaryText  ${css.proj_title}`}>
@@ -107,7 +127,7 @@ const Gallery = () => {
             variants={fadeIn("left", "tween", 0, 0.6)}
           >
             <div className={css.comingSoon}>
-              <img src="/elo.png" alt="project" />
+              <img src="/elo.png" alt="elo project" />
             </div>
             <div className={`secondaryText  ${css.proj_title}`}>
               Aligning Cross-Department Project Recruitment
