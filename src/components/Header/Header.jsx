@@ -52,7 +52,7 @@ const Header = ({ tab, handleClickTab }) => {
           </li>
           <li>
             <a
-              href="/resume/resume_frontend.pdf"
+              href="/resume/resume_sde.pdf"
               target="_blank"
               className={css.inactive}
             >
